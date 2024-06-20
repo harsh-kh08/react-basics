@@ -1,0 +1,42 @@
+
+Given Functional Component with hook
+
+Code -
+
+function App()
+{
+    int initialValue=0;
+    const[state,setState]=useState(initialValue)
+
+
+const adValue = ()=>
+{
+    setState(state+1)
+    setState(state+1)
+    setState(state+1)
+    setState(state+1)
+
+}
+
+
+}
+
+----------------------------------------------- Code ends -----------------------------------
+
+Q. What will be the answer on first click ?
+
+Ans. The answer will be 1 instead 4
+
+What useState does is that whenever it wants to update state or state value, it updates in batches.
+This is because this is a feature Fiber architecture used in in the implementation of react algorithm
+
+If we want to update with the above method, we can use prev value and pass it in the function of setState
+
+setCounter((prevCounter)=>
+{
+    setState(prevCounter+1)
+})
+
+Now what's happening is that we are taking previous value in callback function of useState
+--------------------------------------------------------------------------------------------------------
+

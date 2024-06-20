@@ -1,0 +1,18 @@
+
+Q. What does React.createDOM method do behind the scene ?
+
+Ans. Behind the scene, it creates a DOM like structure. Like browser has DOM structure, createDOM also creates a DOM structure.
+
+Q. Why the react needs to create its own DOM structure ?
+
+Ans. React compares main DOM(browser DOM) and its own DOM and compares them, and then updates or apply these changes to main DOM
+
+But what browser DOM does that in order to update its own DOM, it repaints or reconstruct its full DOM tree.
+This repaint of tree DOM structure is reloading of page
+
+When we say a loading icon on page task bar, it means DOM tree structure is being prepared.
+
+
+Learn about React Fibre from Github Repo - https://github.com/acdlite/react-fiber-architecture
+
+Video link - https://www.youtube.com/watch?v=MPCVGFvgVEQ&list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige&index=7
